@@ -1,14 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Form from './components/yeildPredictor';
+import LandingPage from './components/landingPage';
+import Dashbord from './components/dashboard';
 
 function App() {
   return (
-    <>
-    <div className='bg-black h-screen flex items-center justify-center text-white text-3xl font-bold'>
-    Hellow World!
-
-    </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/predict" element={<Form />} />
+        <Route path="/dashboard" element={<Dashbord />} />
+      </Routes>
+    </Router>
   );
 }
 
