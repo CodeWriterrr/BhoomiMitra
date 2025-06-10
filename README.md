@@ -4,7 +4,8 @@
 
 
 <p align="center">>
-![Screenshot 2025-06-10 174145](https://github.com/user-attachments/assets/fad66e28-aef4-4e55-b3a1-af5d56a4b508)
+   <img src="![Screenshot 2025-06-10 174145](https://github.com/user-attachments/assets/6550bc3f-0f3b-423f-82b7-ac46aae03f55)
+">
 </p>
 
 ## 🚀 Features
