@@ -2,7 +2,8 @@
      
 # Problem Statement : Predicting Crop Yields & Weather Impact
 
-# 🌾 BhoomiMitra - AI-Powered Agricultural Platform
+# 🌾 BhoomiMitra - AI-Powered Agricultural Platform 
+live https://bhoomi-mitra-omega.vercel.app/
 
 **BhoomiMitra** (भूमिमित्र - "Friend of the Earth") is a comprehensive AI-powered agricultural platform designed to empower farmers with cutting-edge technology for better crop management, disease detection, yield prediction, and smart marketplace solutions.
 
