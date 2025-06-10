@@ -38,7 +38,6 @@
 - **Framework**: React.js  with App Router
 - **Language**: Js
 - **Styling**: Tailwind CSS + shadcn/ui components
-- **State Management**: Zustand for global state
 - **Icons**: Lucide React icons
 
 ### **Backend**
