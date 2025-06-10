@@ -1,1 +1,1 @@
-﻿# BhoomiMitra Ai prowerd Farm solution ko
+﻿# BhoomiMitra Ai prowerd Farm solution.
