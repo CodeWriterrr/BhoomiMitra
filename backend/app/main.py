@@ -7,20 +7,24 @@ from flask_cors import CORS
 import os
 import pandas as pd
 import requests
+from dotenv import load_dotenv
 
 
+
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app)
 
-API_KEY_CHAT = "AIzaSyCfCQ4CPErdLdJYk3TbS0TmJGrwTgm5tWA"
+API_KEY_CHAT = os.getenv("API_KEY_CHAT")
 API_URL_CHAT = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key={API_KEY_CHAT}"
 
 
-API_KEY = "W3hs29z29YQf63Zk2JQpAq3WTbVqVSQ7ZnKOojvuyLoaQdB0Sb"
+API_KEY = os.getenv("API_KEY")
+
 KINDWISE_URL = "https://insect.kindwise.com/api/v1/identification?details=url,common_names"
 
-WEATHER_API_KEY = "3582913f081af70564f5d6932d35d496"
+WEATHER_API_KEY = os.getenv("WEATHER_API_KEY")
 
 model_path = os.path.join(os.path.dirname(__file__), 'models', 'productionmodel.pkl')
 model = pickle.load(open(model_path, 'rb'))
