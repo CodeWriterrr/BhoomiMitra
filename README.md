@@ -1,3 +1,7 @@
+# 🧑‍🤝‍🧑Team - CodeWriter
+     
+# Problem Statement : Predicting Crop Yields & Weather Impact
+
 # 🌾 BhoomiMitra - AI-Powered Agricultural Platform
 
 **BhoomiMitra** (भूमिमित्र - "Friend of the Earth") is a comprehensive AI-powered agricultural platform designed to empower farmers with cutting-edge technology for better crop management, disease detection, yield prediction, and smart marketplace solutions.
@@ -92,11 +96,7 @@
    cd backend
    \`\`\`
 
-2. **Create virtual environment**
-   \`\`\`bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   \`\`\`
+
 
 3. **Install dependencies**
    \`\`\`bash
@@ -105,22 +105,14 @@
 
 4. **Environment configuration**
    \`\`\`bash
-   cp .env.example .env
+   .env file
    \`\`\`
    
-   Update `.env` with your configuration:
-   \`\`\`env
-   SECRET_KEY=your-secret-key-here
-   OPENAI_API_KEY=your-openai-api-key
-   WEATHER_API_KEY=your-weather-api-key
-   
-   \`\`\`
-
+  
 
 5. **Run backend server**
    \`\`\`bash
-   uvicorn main:app --reload
-   or
+   
    python main.py
    \`\`\`
 
