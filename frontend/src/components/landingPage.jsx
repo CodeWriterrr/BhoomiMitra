@@ -2,7 +2,9 @@
 
 import { useEffect, useRef, useState } from "react"
 import { useNavigate } from 'react-router-dom';
-
+import { 
+  Sprout
+} from "lucide-react"
 
 
 // Custom Button Component
@@ -81,17 +83,7 @@ const Badge = ({ children, variant = "default", className = "", ...props }) => {
   )
 }
 
-// Lucide React Icons (simplified versions)
-const Sprout = ({ className = "", ...props }) => (
-  <svg className={`w-6 h-6 ${className}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" {...props}>
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-    />
-  </svg>
-)
+
 
 const CloudRain = ({ className = "", ...props }) => (
   <svg className={`w-6 h-6 ${className}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" {...props}>
@@ -407,12 +399,12 @@ const handleGetStarted = () => {
       <header className="sticky top-0 z-50 w-full border-b glass-effect">
         <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
           <div className="flex items-center space-x-3 animate-slideInLeft">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-600 animate-pulse-slow">
-              <Sprout className="h-6 w-6 text-white" />
+            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white animate-pulse-slow">
+              <Sprout className="h-8 w-8 text-green-600" />
             </div>
             <div>
               <span className="text-xl font-bold text-green-800">BhoomiMitra</span>
-              <p className="text-xs text-gray-600">by Team CodeWriter</p>
+              
             </div>
           </div>
 
@@ -488,7 +480,7 @@ const handleGetStarted = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="md" className="text-lg px-8 hover:scale-105 transition-all duration-300 hover:shadow-lg">
+                <Button size="md" className="text-lg px-8 hover:scale-105 transition-all duration-300 hover:shadow-lg " onClick={handleGetStarted}>
                   Start Farming Smart
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
