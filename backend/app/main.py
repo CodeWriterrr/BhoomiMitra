@@ -8,9 +8,7 @@ import os
 import pandas as pd
 import requests
 
-# Load model
-with open('backend/app/train/crop_production_model.pkl', 'rb') as f:
-    model = pickle.load(f)
+
 
 app = Flask(__name__)
 CORS(app)
