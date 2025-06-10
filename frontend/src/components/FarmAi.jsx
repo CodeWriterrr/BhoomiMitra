@@ -161,6 +161,7 @@ export default function FarmerAssistant() {
   const [response, setResponse] = useState("")
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -181,7 +182,7 @@ export default function FarmerAssistant() {
           ? `Please respond in ${languages.find((l) => l.code === language)?.name || "the selected language"}. ${prompt}`
           : prompt
 
-      const res = await fetch("http://127.0.0.1:5000/ask-gemini", {
+      const res = await fetch(`${API_BASE_URL}/ask-gemini`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

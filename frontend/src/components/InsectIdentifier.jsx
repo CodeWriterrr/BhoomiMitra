@@ -7,6 +7,7 @@ const InsectIdentifier = () => {
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState(null);
   const [error, setError] = useState(null);
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
   // Mock suggested insects for demonstration
   const mockSuggestions = [
@@ -137,7 +138,7 @@ const InsectIdentifier = () => {
 
     try {
       // Update this URL to match your Flask server
-      const response = await fetch('http://localhost:5000/identify', {
+      const response = await fetch(`${API_BASE_URL}/identify`, {
         method: 'POST',
         body: formData,
       });

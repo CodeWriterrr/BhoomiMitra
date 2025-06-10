@@ -23,15 +23,15 @@ const WeatherAlertDashboard = () => {
   const [loading, setLoading] = useState(false);
   const [selectedLocation, setSelectedLocation] = useState('Bareilly, UP');
   const [lastUpdated, setLastUpdated] = useState(new Date());
-
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
   
 
 const fetchWeatherData = async () => {
   setLoading(true);
   try {
     const city = selectedLocation.split(',')[0]; // Extract city name (e.g., "Bareilly")
-    const resWeather = await fetch(`http://localhost:5000/weather?location=${city}`);
-    const resAlerts = await fetch(`http://localhost:5000/alerts`);
+    const resWeather = await fetch(`${API_BASE_URL}/weather?location=${city}`);
+    const resAlerts = await fetch(`${API_BASE_URL}/alerts`);
 
     const weather = await resWeather.json();
     const alertsData = await resAlerts.json();

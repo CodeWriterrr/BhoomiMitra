@@ -28,13 +28,16 @@ export default function DashboardPage() {
   const { logout } = useAuth0();
   const { user, isAuthenticated, isLoading } = useAuth0();
 
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+
+  
   
 
   useEffect(() => {
     const fetchWeather = async () => {
       try {
         const res = await fetch(
-          `http://localhost:5000/weather?location=${location}`
+          `${API_BASE_URL}/weather?location=${location}`
         );
         const data = await res.json();
         setWeatherData(data);

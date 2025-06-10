@@ -12,6 +12,7 @@ const CropYieldPredictor = () => {
   
   const [prediction, setPrediction] = useState(null);
   const [loading, setLoading] = useState(false);
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
   // Reference yield data for display
   const cropYields = {
@@ -49,7 +50,7 @@ const CropYieldPredictor = () => {
     setPrediction(null);
 
     try {
-      const response = await fetch('http://localhost:5000/predict', {
+      const response = await fetch(`${API_BASE_URL}/predict`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
