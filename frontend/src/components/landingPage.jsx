@@ -6,6 +6,8 @@ import {
   Sprout
 } from "lucide-react"
 
+import { useAuth0 } from "@auth0/auth0-react";
+
 
 // Custom Button Component
 const Button = ({ children, variant = "primary", size = "md", className = "", onClick, ...props }) => {
@@ -272,6 +274,8 @@ export default function BhoomiMitraLanding() {
   const [solutionRef, solutionInView] = useInView()
   const [techRef, techInView] = useInView()
 
+  const { loginWithRedirect } = useAuth0();
+
   const navigate = useNavigate();
 
 const handleGetStarted = () => {
@@ -439,7 +443,7 @@ const handleGetStarted = () => {
             <Button variant="outline" className="hidden md:inline-flex hover:scale-105 transition-transform">
               View Demo
             </Button>
-            <Button className="hover:scale-105 transition-all duration-300" onClick={handleGetStarted}>Get Started</Button>
+            <Button className="hover:scale-105 transition-all duration-300" onClick={() => loginWithRedirect()}>Get Started</Button>
           </div>
         </div>
       </header>
@@ -480,7 +484,7 @@ const handleGetStarted = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="md" className="text-lg px-8 hover:scale-105 transition-all duration-300 hover:shadow-lg " onClick={handleGetStarted}>
+                <Button size="md" className="text-lg px-8 hover:scale-105 transition-all duration-300 hover:shadow-lg " onClick={() => loginWithRedirect()}>
                   Start Farming Smart
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>

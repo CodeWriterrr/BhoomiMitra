@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+
+import { useAuth0 } from "@auth0/auth0-react";
 import {
   Sprout,
   CloudRain,
@@ -22,6 +24,11 @@ export default function DashboardPage() {
   const navigate = useNavigate();
   const [weatherData, setWeatherData] = useState(null);
   const [location] = useState("Shamli, India"); // Default location, can be dynamic
+
+  const { logout } = useAuth0();
+  const { user, isAuthenticated, isLoading } = useAuth0();
+
+  
 
   useEffect(() => {
     const fetchWeather = async () => {
@@ -100,13 +107,13 @@ export default function DashboardPage() {
             <button className="p-2 hover:bg-gray-100 rounded-lg transition-colors">
               <Bell className="h-5 w-5 text-gray-600" />
             </button>
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center text-white text-sm font-medium">
-                NS
-              </div>
-              <span className="text-sm font-medium text-gray-700">
-                Nitin Saini
+            <span className="text-gray-800 font-medium">
+              {isAuthenticated && user ? user.name : "Guest"}
               </span>
+            <div className="flex items-center space-x-2">
+              <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+      Log Out
+    </button>
             </div>
           </div>
         </div>
@@ -116,7 +123,7 @@ export default function DashboardPage() {
         {/* Welcome Section */}
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
-            Welcome back, Nitin!
+            Welcome back, {isAuthenticated && user ? user.name : "Guest"}
           </h1>
           <p className="text-gray-600">
             Here's what's happening with your farm today.

@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Auth0Provider } from '@auth0/auth0-react';
 
 import Form from './components/yeildPredictor';
 import LandingPage from './components/landingPage';
@@ -11,6 +12,14 @@ import MarketplacePage from './components/Marketplace';
 
 function App() {
   return (
+    
+   <Auth0Provider
+    domain="dev-nj2gl6mp3nq4fg6c.us.auth0.com"
+    clientId="QoG0woG0TOr0NRMM9n4xE9hxcBh06l5d"
+    authorizationParams={{
+      redirect_uri: window.location.origin +"/dashboard"
+    }}
+  >
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
@@ -23,6 +32,7 @@ function App() {
 
       </Routes>
     </Router>
+  </Auth0Provider>
   );
 }
 
