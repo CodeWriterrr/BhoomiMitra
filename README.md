@@ -59,47 +59,47 @@
 ### **Frontend Setup**
 
 1. **Clone the repository**
-   \`\`\`bash
+   ```bash
    git clone https://github.com/CodeWriterrr/bhoomimitra.git
    cd bhoomimitra
-   \`\`\`
+   ```
 
 2. **Install dependencies**
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. **Environment configuration**
-   \`\`\`bash
+   ```bash
    cp .env.example .env.local
-   \`\`\`
+   ```
    
    Update `.env.local` with your configuration:
-   \`\`\`env
-   NEXT_PUBLIC_API_URL=http://localhost:8000
+   ```env
+   NEXT_PUBLIC_API_URL=http://localhost:5000
    NEXT_PUBLIC_APP_NAME=BhoomiMitra
-   \`\`\`
+   ```
 
 4. **Run development server**
-   \`\`\`bash
+   ```bash
    npm run dev  / start
-   \`\`\`
+   ```
 
    Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### **Backend Setup**
 
 1. **Navigate to backend directory**
-   \`\`\`bash
+   ```bash
    cd backend
-   \`\`\`
+   ```
 
 
 
 3. **Install dependencies**
-   \`\`\`bash
+   ```bash
    pip install -r requirements.txt
-   \`\`\`
+   ```
 
 4. **Environment configuration**
    \`\`\`bash
@@ -109,10 +109,10 @@
   
 
 5. **Run backend server**
-   \`\`\`bash
+   ```bash
    
    python main.py
-   \`\`\`
+   ```
 
 ## ScreenShote
 
