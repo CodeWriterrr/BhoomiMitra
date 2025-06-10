@@ -114,7 +114,7 @@
    python main.py
    ```
 
-## ScreenShote
+## ScreenShot
 
 ![image](https://github.com/user-attachments/assets/c2361987-f495-41d0-9eca-13bc9e787efc)
 ![image](https://github.com/user-attachments/assets/e07929c3-4627-4160-917e-0e99747a36a7)
