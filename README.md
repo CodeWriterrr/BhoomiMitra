@@ -2,7 +2,8 @@
 
 **BhoomiMitra** (भूमिमित्र - "Friend of the Earth") is a comprehensive AI-powered agricultural platform designed to empower farmers with cutting-edge technology for better crop management, disease detection, yield prediction, and smart marketplace solutions.
 
-![BhoomiMitra Banner](https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=1200&h=400&fit=crop)
+![Screenshot 2025-06-10 174145](https://github.com/user-attachments/assets/fad66e28-aef4-4e55-b3a1-af5d56a4b508)
+
 
 ## 🚀 Features
 
