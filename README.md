@@ -27,8 +27,7 @@
 ### 🛒 **Digital Marketplace**
 - **Buy & Sell Crops**: Direct farmer-to-buyer marketplace with competitive pricing
 - **Smart Listings**: AI-powered crop categorization and quality assessment
-- **Price Trends**: Real-time market analysis and price predictions
-- **Secure Transactions**: Built-in communication and transaction management
+
 
 
 
@@ -115,7 +114,16 @@
    python main.py
    \`\`\`
 
- 
+## ScreenShote
+
+![image](https://github.com/user-attachments/assets/c2361987-f495-41d0-9eca-13bc9e787efc)
+![image](https://github.com/user-attachments/assets/e07929c3-4627-4160-917e-0e99747a36a7)
+![localhost_3000_dashboard](https://github.com/user-attachments/assets/446284b2-96c3-4d48-8fdf-ccad96443de9)
+![localhost_3000_predict](https://github.com/user-attachments/assets/553433c8-8e4b-4921-bf33-c6032087a184)
+![localhost_3000_weather](https://github.com/user-attachments/assets/f38ec159-eab5-41dc-ba15-efc3bd48dfcc)
+![localhost_3000_insect-identifier](https://github.com/user-attachments/assets/6647eebe-0541-4c60-b8c1-725c1c0eb098)
+![localhost_3000_farm-ai](https://github.com/user-attachments/assets/2c866a86-14c1-42e1-9688-0ad5a91a205d)
+![localhost_3000_marketplace](https://github.com/user-attachments/assets/006edf2c-c741-4069-9ee7-038512faecdb)
 
 
 ## 📱 Usage Guide
